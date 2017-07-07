@@ -15,7 +15,7 @@ You should define functions for calculating the tax and for formatting the price
 Bonus Challenge: Try to incorporate input into this program, perhaps with the prompt(..) covered in "Input" earlier. 
 You may prompt the user for their bank account balance, for example. Have fun and be creative!*/
 
-const margen_gasto = 1000;
+var margen_gasto = 1000;
 const impuestos = 0.21;
 const precio_telefono = 99.99;
 const precio_accesorio = 9.99;
@@ -28,6 +28,6 @@ var compra = (precio_telefono + precio_accesorio) * impuestos;
 while (margen_gasto > 0) {
 	margen_gasto = margen_gasto - compra;
     cantidadTelefonos++;
+    console.log(margen_gasto);
 };
-return "usted compró " + cantidadTelefonos + " teléfonos con el dinero disponible";
-
+alert("usted compró " + cantidadTelefonos + " teléfonos con el dinero disponible");
